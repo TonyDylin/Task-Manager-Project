@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📝 Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 My Task Manager</h1>
+    <p id="greeting">Welcome!</p>
+
+    <!-- Step 1: Name input -->
+    <div class="name-section" id="nameSection">
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button id="saveNameBtn">Save Name</button>
+    </div>
+
+    <!-- Step 2: Show this after name is saved -->
+    <p id="startLink" style="display:none;">
+      <a href="#" id="startTaskLink">➡️ Start Adding Tasks</a>
+    </p>
+
+    <!-- Step 3: Task UI section -->
+    <div id="taskSection" style="display:none;">
+
+      <div id="userControl" style="margin-bottom: 10px;">
+        <span id="usernameDisplay"></span>
+        <button id="editNameBtn">✏️ Edit Name</button>
+        <button id="switchUserBtn">🔄 Switch User</button>
+      </div>
+
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Task..." />
+        <input type="date" id="taskDate" />
+        <input type="time" id="taskTime" />
+        <button id="addTaskBtn">➕</button>
+      </div>
+
+      <h3>📝 Tasks</h3>
+      <ul id="taskList"></ul>
+      <p id="emptyMessage">🎉 Nothing to do!</p>
+
+      <h3>✅ Done</h3>
+      <ul id="doneList"></ul>
+    </div>
+
+    <footer><p>© 2025 My Task Manager</p></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
